@@ -16,7 +16,8 @@
   * pytorch 
   * Numpy
   * cuda
-## First time set up:  
+## References:  
+
       
   
   
