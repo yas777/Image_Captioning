@@ -16,5 +16,9 @@ Requirements:
   * pytorch 
   * Numpy
   * cuda
+First time set up:  
+      
+  
+  
   
   
