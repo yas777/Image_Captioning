@@ -1,7 +1,7 @@
 # Image_Captioning  
   ![](./images/109823395.jpg) ![](/images/1131800850.jpg)
 
-A man is riding an atv in the field				A brown and white dog is shaking it self by water
+A man is riding an atv in the field	      A brown and white dog is shaking it self by water
 
 
 
