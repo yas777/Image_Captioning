@@ -128,18 +128,18 @@ class DecoderRNN(nn.Module):
         batch_size = input.size(0)
         # print("[ Batch Size ] : " + str(batch_size))
         encoder_dim = encoder_out.size(3)
-        # print("[ Encoder dimension ] : " + str(encoder_dim))
         Max_len = input.size(1)
         # print("[ Max_len ] : " + str(Max_len))
-
+        # print("[ Encoder dimension ] : " + str(encoder_dim))
+        
         embeddings =self.encoder(input) # B*Max_len*embed_dim
-        # print("[ Embedding Size ] : " + str(embeddings.size()))
-
+        
         encoder_out = encoder_out.view(batch_size, -1, encoder_dim) # B*num_pixels*encoder_dim
-        # print("[ Encoder_out Size] : " + str(encoder_out.size()))
         num_pixels = encoder_out.size(1)
 
         last_hidden, last_cell = self.init_hidden_state(encoder_out) #B*hidden_dim
+        # print("[ Embedding Size ] : " + str(embeddings.size()))
+        # print("[ Encoder_out Size] : " + str(encoder_out.size()))
         # print("[ Hidden Size, Cell size] : " + str(last_hidden.size()) + ", " + str(last_cell.size()))
 
         final_out = t.zeros(batch_size, Max_len, self.ntokens).to(device)
