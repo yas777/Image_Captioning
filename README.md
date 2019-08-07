@@ -16,7 +16,7 @@ A man is riding an atv in the field .      A brown and white dog is shaking it s
    - The weights corresponding to each pixel at a time instant are calculated using hidden state of previous time instant and the encoder output. We used soft attention where the sum of weigths of pixels add up to one.
   ### Decoder:
    - By looking at the encoded image with probabilities assigned to each pixels, last hidden it tries to predict the next word in the sequence.
-   - We used lstm since generating a sequence would need recurrent neural network.
+   - Since generating a sequence would need recurrent neural network we used lstms.
 ## Results :
 ​                                                ![](/images/109823395.jpg)   
    ![](images/fig_41.png) - ![](images/fig_42.png) 
